@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-300">
     <NuxtLink to="/">ホーム画面へ</NuxtLink>
     <h1 class="font-bold">このサイトについて</h1>
     <h2>{{ nuxt }}</h2>
