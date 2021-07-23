@@ -1,16 +1,17 @@
 <template>
   <div class="bg-gray-100">
+    <NuxtLink to="/">ホーム画面へ</NuxtLink>
     <h1 class="font-bold">このサイトについて</h1>
     <h2>{{ nuxt }}</h2>
     <input type="text" v-model="newText">
     <p>{{ newText }}</p>
     <button @click="countUp">{{ click }}</button>
     <p>{{ counter }}</p>
-
-    <p>{{ number | addComma }}</p>
-
-    <button>こんにちは
-    </button>
+    
+    <button @click="show = !show">{{ click }}2</button>
+    <transition name="fade">
+      <p v-show="show">Nuxt.js</p>
+    </transition>
 
     <p>{{ albums }}</p>
   </div>
@@ -25,8 +26,12 @@ export default {
       counter: 0,
       number: 1234567890,
       nuxt: "Hello Nuxt!",
-      albums: []
+      albums: [],
+      show: false,
     }
+  },
+  transition: {
+    name: "fade"
   },
   methods: {
     countUp() {
