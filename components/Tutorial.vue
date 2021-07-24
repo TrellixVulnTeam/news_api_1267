@@ -19,6 +19,7 @@
         <NuxtLink to="/about">aboutページへ</NuxtLink>
         <NuxtLink to="/todos">Todosページへ</NuxtLink>
         <NuxtLink to="/vue">Vue練習ページへ</NuxtLink>
+        <NuxtLink to="/members">Membersページへ</NuxtLink>
       </div>
       <div class="flex justify-center pt-4 space-x-2">
         <a href="https://github.com/nuxt/nuxt.js" target="_blank"><svg
