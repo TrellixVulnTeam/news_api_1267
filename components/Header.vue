@@ -5,7 +5,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
-              <div class="flex-shrink-0">
+              <div class="flex-shrink-0 flex items-center">
                 <NuxtLink to="/">
                   <img
                     class="h-10 w-10"
@@ -13,6 +13,7 @@
                     alt="Site logo"
                   >
                 </NuxtLink>
+                <h1 class="text-white mx-2.5 text-lg font-medium">Yozakura</h1>
               </div>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline">
@@ -22,7 +23,7 @@
                   <NuxtLink to="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
                     About
                   </NuxtLink>
-                  <NuxtLink to="/contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+                  <NuxtLink to="/contact/contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
                     Contact
                   </NuxtLink>
                 </div>
@@ -31,7 +32,7 @@
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
                 <button
-                  class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
+                  class="p-1 border-2 border-transparent text-white rounded-full focus:outline-none focus:text-white"
                   aria-label="Notifications"
                 >
                   <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -104,7 +105,7 @@
               <!-- Mobile menu button -->
               <button
                 @click="toggle"
-                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-green-500 focus:outline-none focus:bg-green-500"
               >
                 <svg
                   :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
@@ -138,26 +139,19 @@
         </div>
         <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
           <div class="px-2 pt-2 pb-3 sm:px-3">
-            <a
-              href="#"
-              class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
-            >Dashboard</a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-            >Team</a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-            >Projects</a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-            >Calendar</a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-            >Reports</a>
+            <NuxtLink to="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+              Home
+            </NuxtLink>
+            <NuxtLink to="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+              About
+            </NuxtLink>
+            <NuxtLink to="/business" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+              Business
+            </NuxtLink>
+            <NuxtLink to="/contact/contact" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+              Contact
+            </NuxtLink>
+
           </div>
           <div class="pt-4 pb-3 border-t border-gray-700">
             <div class="flex items-center px-5">
