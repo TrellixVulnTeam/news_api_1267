@@ -18,6 +18,10 @@ export default {
       { rel: 'icon', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' }
     ]
   },
+  target: 'static',
+  generate: {
+    fallback: true
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
