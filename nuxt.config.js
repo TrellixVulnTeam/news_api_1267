@@ -51,6 +51,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/dayjs',
+    '@nuxtjs/tailwindcss',
   ],
   axios: {
 
