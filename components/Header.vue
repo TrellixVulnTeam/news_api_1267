@@ -17,13 +17,13 @@
               </div>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline">
-                  <NuxtLink to="/business" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+                  <NuxtLink to="/business" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white">
                     Business
                   </NuxtLink>
-                  <NuxtLink to="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+                  <NuxtLink to="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white">
                     About
                   </NuxtLink>
-                  <NuxtLink to="/contact/contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white focus:bg-gray-700">
+                  <NuxtLink to="/contact/contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:text-white">
                     Contact
                   </NuxtLink>
                 </div>
