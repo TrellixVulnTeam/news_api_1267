@@ -51,7 +51,6 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/dayjs',
-    '@nuxtjs/tailwindcss',
   ],
   axios: {
 
@@ -62,6 +61,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: require('tailwindcss')(
+          path.join(__dirname, 'tailwind.js')
+        ),
+        autoprefixer: require('autoprefixer')
+      }
+    }
   },
   
   loading: {
